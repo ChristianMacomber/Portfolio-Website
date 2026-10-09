@@ -72,3 +72,16 @@ This archive contains source code, **not** the compiled `dist` output. If upload
 - Replace the Casino Simulator trailer with your improved version when available.
 
 V4 source has been packaged and ZIP-checked, but a production build could not be completed in this environment because npm dependency installation timed out. If Cloudflare reports a build error, inspect the first error line in the build log.
+
+
+## V4.1 changes
+- Rebuilt the homepage around the reference image's layout: left-aligned pixel headline, scenic hero, code-editor window, internship status and interest panels.
+- Removed the darkened project screenshot montage from the hero.
+- Featured projects now display full-brightness screenshots in large cards.
+- Added skills, experience and About panels below the featured projects.
+- Preserved all existing project detail pages, resume, contact, and dark/light toggle.
+- The scenic backdrop is an editable SVG at `public/theme/pixel-landscape.svg`. The mockup was a concept image, so the live layout is an implementation inspired by it, not a pixel-perfect reproduction.
+
+### Cloudflare Pages
+Extract the ZIP and replace the old repository source files, keeping your own custom files if any.
+Build command: `npm run build`; output directory: `dist`; Node.js 22.
