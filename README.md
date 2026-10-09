@@ -30,3 +30,20 @@ Upload the **contents of this folder** to your GitHub repository (do not upload 
 - Review project titles, descriptions, and any differences between older résumé wording and current project details.
 
 No personal information from the reference developer is included.
+
+
+## Cloudflare Pages deployment
+
+**Git-connected deployment**
+- Framework preset: Vite
+- Root directory: repository root (leave empty if files are at the root)
+- Build command: `npm run build`
+- Build output directory: `dist`
+- Node version: 22 (set `NODE_VERSION=22` if needed)
+
+Upload the **contents** of this ZIP to your repository root. `package.json` and `index.html` must appear at the top level.
+
+**Direct upload:** This is a source-code ZIP, not a built website. For Cloudflare Pages direct upload, run `npm install` and `npm run build` locally, then upload the generated `dist/` directory.
+
+Internal navigation uses hash routes, so special redirect rules are unnecessary.
+If deployment fails, check the first error in the Cloudflare build log.
