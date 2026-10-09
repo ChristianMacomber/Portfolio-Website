@@ -85,3 +85,10 @@ V4 source has been packaged and ZIP-checked, but a production build could not be
 ### Cloudflare Pages
 Extract the ZIP and replace the old repository source files, keeping your own custom files if any.
 Build command: `npm run build`; output directory: `dist`; Node.js 22.
+
+## V4.2 navigation improvements
+- Pixel-art SVG icons in all desktop/mobile navigation links and hero buttons. Icons are individually replaceable under `public/theme/icons/`.
+- Wide navigation items distribute available horizontal space instead of bunching up in the center.
+- Day/night slider at the far right always shows **both** sun and moon icons. Dark remains the default; choice persists in local storage.
+- On smaller screens the navigation collapses into a menu, while the slider stays visible.
+- If GitHub is not configured, no dead link is shown.
