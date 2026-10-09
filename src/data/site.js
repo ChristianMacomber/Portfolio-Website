@@ -1,6 +1,6 @@
 // Replace blank URLs when available. Empty URLs render as unavailable, never as fake links.
 export const site = {
-  name:'Christian Macomber',initials:'CM.',location:'Redmond, Washington',
+  name:'Christian Macomber',initials:'CM',location:'Redmond, Washington',
   email:'christiandaniel1708@gmail.com',
   linkedin:'https://www.linkedin.com/in/christian-macomber-b94898330/',
   github:'', // TODO: add your GitHub profile URL

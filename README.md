@@ -47,3 +47,28 @@ Upload the **contents** of this ZIP to your repository root. `package.json` and 
 
 Internal navigation uses hash routes, so special redirect rules are unnecessary.
 If deployment fails, check the first error in the Cloudflare build log.
+
+## V4 redesign — Pixel UI / software engineering
+
+V4 keeps the same React/Vite pages, project data, screenshots, trailers, resume and contact links as V3, while updating the whole site's visual language.
+
+- **Navigation:** pixel-framed software-engineer menu, status indicator, accessible mobile menu, and a light/dark toggle.
+- **Default theme:** dark. A visitor's explicit choice is stored in browser `localStorage` under `cm-theme`; first visits always default to dark.
+- **Home:** original CSS/SVG pixel-art landscape (`public/theme/pixel-landscape.svg`) overlaid with existing real project media, plus a software-engineering introduction.
+- **Interior pages:** restrained, pixel-bordered project cards, project detail pages, résumé frame, and contact panels.
+- **Editable theme:** `src/v4-theme.css` contains the color variables, frame treatments and responsive layout. Change `--accent`, `--bg`, etc. for broad palette updates. Edit the original SVG scene at `public/theme/pixel-landscape.svg`.
+- **Editable status:** search `SEEKING SUMMER 2027 INTERNSHIPS` in `src/main.jsx` to change the visible status text. Green means actively seeking opportunities, not a real-time availability service.
+
+### Deploy to Cloudflare Pages
+
+Extract this archive and replace your repository's old source files with the **contents** of the V4 folder, keeping `package.json` and `index.html` at the root. Do not leave old V1/V2 `App.jsx` or `App.css` in the root. Commit/push, and use **Vite**, build command `npm run build`, output directory `dist`, and Node.js 22.
+
+This archive contains source code, **not** the compiled `dist` output. If uploading directly to Cloudflare Pages, run `npm install && npm run build` locally and upload `dist`.
+
+### Still pending
+
+- Add a portrait to replace the About photo placeholder.
+- Add your GitHub profile URL in `src/data/site.js` (currently blank to avoid inventing a link).
+- Replace the Casino Simulator trailer with your improved version when available.
+
+V4 source has been packaged and ZIP-checked, but a production build could not be completed in this environment because npm dependency installation timed out. If Cloudflare reports a build error, inspect the first error line in the build log.
