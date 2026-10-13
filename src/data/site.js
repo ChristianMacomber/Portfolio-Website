@@ -3,7 +3,7 @@ export const site = {
   name:'Christian Macomber',initials:'CM',location:'Redmond, Washington',
   email:'christiandaniel1708@gmail.com',
   linkedin:'https://www.linkedin.com/in/christian-macomber-b94898330/',
-  github:'', // TODO: add your GitHub profile URL
+  github:'https://github.com/AnimeAcademy',
   resume:'/resume/Christian_Macomber_Resume.pdf',
   resumeDocx:'/resume/Christian_Macomber_Resume.docx',
   languages:['C++','C','C#','Python','Verse','ARM Assembly'],
